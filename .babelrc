@@ -1,0 +1,37 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "babel-preset-stage-0"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "syntax-dynamic-import",
+    "lodash",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
+  ],
+  "env": {
+    "dev": {
+      "plugins": []
+    },
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
+}
