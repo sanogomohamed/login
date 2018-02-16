@@ -7,7 +7,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export default class SimpleNav extends PureComponent {
+export default class Menu extends PureComponent {
   static propTypes = {
     routes: PropTypes.array.isRequired,
   };
@@ -38,7 +38,7 @@ export default class SimpleNav extends PureComponent {
 
   render() {
     return (
-      <div className="common-simple-nav">
+      <div className="common-menu">
         {this.renderLinks(this.props.routes[0].childRoutes, '')}
       </div>
     );

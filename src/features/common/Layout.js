@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import SimpleNav from '../common/SimpleNav';
+import Menu from '../common/Menu';
 import routeConfig from '../../common/routeConfig';
-import { LocaleProvider, DatePicker } from 'antd';
-import frFR from 'antd/lib/locale-provider/fr_FR';
 
 /*
   This is the root component of your app. Here you define the overall layout
@@ -20,17 +18,16 @@ export default class App extends Component {
   };
 
   render() {
+
     return (
-      <LocaleProvider>
-        <div className="home-app">
-          <div className="sidebar">
-            <SimpleNav routes={routeConfig} />
-          </div>
-          <div className="page-container">
-            {this.props.children}
-          </div>
+      <div className="home-app">
+        <div className="sidebar">
+          <Menu routes={routeConfig} />
         </div>
-      </LocaleProvider>
+        <div className="page-container">
+          {this.props.children}
+        </div>
+      </div>
     );
   }
 }

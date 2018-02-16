@@ -1,15 +1,29 @@
-import { Layout, PageNotFound } from '../features/common';
+import { App, PageNotFound } from '../features/common';
 import commonRoute from '../features/common/route';
+import authentificationRoute from '../features/authentification/route';
+import bookingRoute from '../features/booking/route';
+import eventRoute from '../features/event/route';
+import userRoute from '../features/user/route';
+import homeRoute from '../features/home/route';
+import othersRoute from '../features/others/route';
+import categoryRoute from '../features/category/route';
 
 // NOTE: DO NOT CHANGE the 'childRoutes' name and the declaration pattern.
 // This is used for Rekit cmds to register routes config for new features, and remove config when remove features, etc.
 const childRoutes = [
   commonRoute,
+  authentificationRoute,
+  bookingRoute,
+  eventRoute,
+  userRoute,
+  homeRoute,
+  othersRoute,
+  categoryRoute,
 ];
 
 const routes = [{
   path: '/',
-  component: Layout,
+  component: App,
   childRoutes: [
     ...childRoutes,
     { path: '*', name: 'Page not found', component: PageNotFound },

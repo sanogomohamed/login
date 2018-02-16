@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import { SimpleNav } from 'src/features/common';
+import { Menu } from 'src/features/common';
 
 describe('components/SimpleNav', () => {
   it('renders node with correct dom structure', () => {
@@ -20,11 +20,11 @@ describe('components/SimpleNav', () => {
       ],
     }];
     const comp = shallow(
-      <SimpleNav routes={routes} />
+      <Menu routes={routes} />
     );
 
     expect(
-      comp.find('.common-simple-nav').getElement()
+      comp.find('.common-menu').getElement()
     ).to.exist;
     expect(
       comp.find('li').length
