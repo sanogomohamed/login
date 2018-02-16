@@ -21,3 +21,17 @@ import { Auth } from '../../../helper/api';
 
 Auth.user(email, password).then(...);
 ```
+
+##AUTHENTIFICATION
+
+username = toto@gmail.com
+password = password
+
+IL Y A la vérification du token pour l'authentification (login dans le front)
+AUCUNE REQUETE NE SERA VALIDER SANS TOKEN (qui est par la suite enregistrer dans le navigateur)
+
+SI BESOIN DE l'ENLEVER désactiver les middlewares dans api-fake !
+
+```bash
+json-server json-server.json --watch db.json
+```
