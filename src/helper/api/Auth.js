@@ -13,7 +13,7 @@ export class Auth extends API {
             this.setToken(TOKEN);
 
             this._axios = this.createInstance(TOKEN);
-        }).catch((res) => this._axios.defaults.headers.common['Authorization'] = "")
+        })
     }
 
     setToken(token){
