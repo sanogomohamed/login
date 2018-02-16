@@ -1,11 +1,11 @@
-export default apiConfig = {
+export default {
     global: {
 
     },
-    production: {
+    prod: {
         url: "https://api.event.ynov.com"
     },
     dev: {
-        url: "http://localhost:5000"
+        url: "http://localhost:5050"
     }
 }

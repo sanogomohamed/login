@@ -1,7 +1,7 @@
-import _axios from 'axios';
-import { CONFIG_API } from '../../../config';
+import axios from 'axios';
+import CONFIG from '../../../config';
 
-export const API_URL = CONFIG_API.url;
+export const API_URL = CONFIG.API.url;
 const METHOD_NAME = "Bearer";
 export const TOKEN_NAME_LOCALSTORAGE = METHOD_NAME + "_token";
 
@@ -13,6 +13,7 @@ export class API {
         //Issue on axios
         //If no data provided the POST is set as a GET
         this.defaultParams = { data : {} };
+        console.log(API_URL);
     }
 
     createInstance(token = this.getToken()){
