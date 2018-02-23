@@ -15,13 +15,6 @@
           "src": "./src"
         }
       }
-    ],
-    [
-      "import",
-      {
-        "libraryName": "antd",
-        "style": true
-      }
     ]
   ],
   "env": {
