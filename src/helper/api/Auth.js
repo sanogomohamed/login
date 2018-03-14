@@ -13,6 +13,7 @@ export class Auth extends API {
             this.setToken(TOKEN);
 
             this._axios = this.createInstance(TOKEN);
+            return "OK"
         })
     }
 
