@@ -36,6 +36,10 @@ import {
   Faq,
   MentionsLegals,
   Cgu,
+  Formcontact,
+  Mapcontact,
+  Headercontact,
+  Footer,
 } from './';
 
 export default {
@@ -45,5 +49,9 @@ export default {
     { path: 'faq', name: 'Faq', component: Faq },
     { path: 'mentions-legals', name: 'Mentions legals', component: MentionsLegals },
     { path: 'cgu', name: 'Cgu', component: Cgu },
+    { path: 'formcontact', name: 'Formcontact', component: Formcontact },
+    { path: 'mapcontact', name: 'Mapcontact', component: Mapcontact },
+    { path: 'headercontact', name: 'Headercontact', component: Headercontact },
+    { path: 'footer', name: 'Footer', component: Footer },
   ],
 };
